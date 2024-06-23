@@ -1,0 +1,90 @@
+.overlay {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    left: -25%;
+    width: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-container {
+    background-color: white;
+    width: 70vw;
+    // max-width: 600px;
+    // height: 70vh;
+    margin: 10px;
+    border-radius: 10px;
+    // position: relative;
+}
+.close-button {
+    right: 0;
+}
+
+.overlay-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Chiều cao của overlay-body trừ đi chiều cao của overlay-title và btn_save */
+    margin-bottom: 10px;
+}
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+    height: auto;
+}
+.overlay-content:nth-child(1),
+.overlay-content:nth-child(2) {
+    flex-basis: 10%; /* Hai phần tử đầu tiên chiếm một nửa */
+}
+
+.overlay-content:nth-child(3) {
+    flex-basis: 100%; /* Phần tử thứ ba chiếm toàn bộ phần còn lại */
+}
+.overlay-title {
+    border-bottom: 1px solid #a1a2a2;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overlay-label {
+    font-size: 0.4rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 30px 0;
+}
+.overlay-cont {
+    margin: 10px;
+    padding: 0px 30px;
+    height: 100%;
+}
+.btn_save {
+    border-top: 1px solid #a1a2a2;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px;
+    // position: absolute;
+    // bottom: 10px;
+    // left: 0;
+    // right: 40px;
+}
+@media (max-width: 600px) {
+    .overlay-container {
+        padding: 10px;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+    }
+
+    .overlay-content:nth-child(1),
+    .overlay-content:nth-child(2),
+    .overlay-content:nth-child(3) {
+        flex-basis: 100%;
+    }
+}

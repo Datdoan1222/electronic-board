@@ -1,0 +1,87 @@
+@use "./scss/" as *;
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+    font-size: $font-size;
+
+    @include desktop {
+        font-size: calc(#{$font-size}* 0.8);
+    }
+
+    @include tablet {
+        font-size: calc(#{$font-size}* 0.6);
+    }
+
+    @include mobile {
+        font-size: calc(#{$font-size}* 0.6);
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: $body-bg;
+    color: $txt-color;
+
+    @include mobile {
+        margin-bottom: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: $primary-color;
+    }
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+    border-bottom: 0 !important;
+}
+
+.ant-tabs-ink-bar {
+    background-color: red !important;
+    height: 2.5px !important;
+    /* Thay #yourColor bằng màu bạn muốn */
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    // color: #ffffff !important; /* Thay #yourColor bằng màu bạn muốn */
+    font-family: "Montserrat" !important;
+    font-weight: 600 !important;
+}
+
+.ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
+    font-size: calc($font-size - 22px);
+    font-family: "Montserrat" !important;
+    font-weight: 600 !important;
+    @include tablet {
+        font-size: calc($font-size - 24px);
+    }
+}
+
+.ant-tabs > .ant-tabs-nav {
+    margin: 0 !important;
+}
+
+.ant-tabs .ant-tabs-tab:hover {
+    color: #cacaca !important;
+    /* Thay #yourColor bằng màu bạn muốn */
+}
+
+.ant-select-multiple .ant-select-selection-placeholder,
+.ant-select-multiple .ant-select-selection-overflow-item-suffix {
+    padding-left: 20px !important;
+}
+
+.ant-select-selector {
+    min-height: 50px !important;
+    overflow: auto !important;
+    scrollbar-width: none !important;
+}

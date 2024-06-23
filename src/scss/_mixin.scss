@@ -1,0 +1,33 @@
+@mixin flex($alignItems, $justifyContent) {
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}
+
+@mixin button(
+	$height,
+	$bg-color,
+	$color,
+	$border,
+	$border-radius,
+	$font-weight,
+	$font-size
+) {
+	width: 100%;
+	height: $height;
+	background-color: $bg-color;
+	color: $color;
+	border: $border;
+	border-radius: $border-radius;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: darken($bg-color, 10%);
+	}
+	font-weight: $font-weight;
+	font-size: $font-size;
+}
+
+@mixin overlay {
+	background-color: rgba($color: #000000, $alpha: 0.6);
+}

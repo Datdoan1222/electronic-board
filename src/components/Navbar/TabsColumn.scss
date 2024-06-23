@@ -1,0 +1,43 @@
+/* App.css */
+.tabscolumn-container {
+    // max-width: 600px; /* Example max-width for the tabs container */
+    // margin: 0 0px; /* Centering the tabs container */
+    // background-color: #fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+}
+
+.tabscolumn-nav {
+}
+.tabscolumn-icon {
+    margin: 0 10px;
+}
+.tabscolumn {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    width: 20vw;
+}
+
+.tabscolumn .active {
+    color: #fff !important;
+    background-color: #e61d23 !important;
+    opacity: 1 !important;
+}
+.tabscolumn:hover {
+    opacity: 0.7;
+    background-color: #000;
+    color: #fff;
+}
+.tabscolumn-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e7e7;
+}

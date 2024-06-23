@@ -1,0 +1,22 @@
+.lich_contain {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    font-size: 16px;
+    background-color: #fff;
+}
+.calendar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #a1a2a2;
+    margin: 10px 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.calendar_item_left {
+    flex: 1;
+}
+.calendar_item_right {
+    flex: 3;
+}

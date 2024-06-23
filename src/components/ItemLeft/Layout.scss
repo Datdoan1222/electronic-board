@@ -1,0 +1,106 @@
+.resolution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #a1a2a2;
+}
+.resolution_right {
+    display: flex;
+    flex-direction: column;
+}
+.btn_resolution {
+    font-size: 13px;
+    border-radius: 10px;
+}
+.layout_contain {
+    width: 250px;
+    height: 140px;
+    margin: 20px auto;
+}
+.layout_item {
+    border-radius: 10px;
+    border: 0.5px solid #a1a2a2;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item1 {
+    flex: 1;
+    // display: flex;
+}
+.item2 {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+.item3 {
+    flex: 2;
+    height: 100%;
+    // display: flex;
+}
+.layout {
+    border: 0.5px solid #a1a2a2;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+    &.selected {
+        background-color: #a1a2a2; // Màu nền khi được chọn
+    }
+}
+.layout:hover {
+    opacity: 0.5;
+}
+.layoutit2 {
+    width: 100%;
+}
+.layout1 {
+    // background-color: #a1a2a2;
+}
+.layout2 {
+    margin: 3px 3px 3px 0;
+}
+.layout3 {
+    margin: 3px;
+}
+.layout4 {
+    margin: 3px 0 3px 3px;
+}
+.layout5 {
+    height: 100%;
+}
+.area {
+    flex: 1;
+}
+.area_title {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+}
+.area_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.area_number {
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    &.selected {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.area_label {
+    font-size: 16px;
+}
+.layout_admin {
+    background-color: #a1a2a2;
+}

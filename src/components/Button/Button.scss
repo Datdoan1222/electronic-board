@@ -1,0 +1,23 @@
+@use "/src/scss" as *;
+
+.button {
+	font-size: calc(#{$font-size} - 20px);
+	@include button(44px, $primary-color, #ffffff, 1px, 40px, 500, 30px);
+}
+
+.btn-logout {
+	@include tablet {
+		font-size: calc(#{$font-size} - 26px);
+	}
+	font-size: calc(#{$font-size} - 20px);
+	@include button(44px, #ffffff, $primary-color, 2px solid, 5px, 600, 15px);
+	&:hover {
+		background-color: $primary-color;
+		color: #ffffff;
+	}
+}
+
+.btn-add {
+	font-size: calc(#{$font-size} - 20px);
+	@include button(44px, $primary-color, #ffffff, 1px, 10px, 500, 17px);
+}
